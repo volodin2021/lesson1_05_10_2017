@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GeekHub</title>
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+
+	<link href="css/bootstrap-reboot.css" rel="stylesheet">
+	<link href="css/bootstrap-grid.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<main class="container">
+
+		<h1>Урок 1. Формы и таблицы.</h1>
+
+		<section>
+			<h2>Урок "Формы": теги и их атрибуты.</h2>
+
+			<h3>Расскажите немного о себе...</h3>
+
+			<form action="test.php" method="post">
+
+				<fieldset class="main-fieldset">
+					<legend>Коротко о себе</legend>
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="firstname">Имя</label>
+						</div>
+						<div class="col-md-6">
+							<input type="text" name="firstname" id="firstname">
+						</div>
+					</div> <!-- end Имя -->
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="lastname">Фамилия</label>
+						</div>
+						<div class="col-md-6">
+							<input type="text" name="lastname" id="lastname">
+						</div>
+					</div> <!-- end Фамилия -->
+
+					<fieldset class="form-group row">
+
+						<legend class="col-md-3">Пол</legend>
+
+						<div class="col-md-9">
+							<div class="form-check form-check-inline">
+								<label for="sex1">
+									<input type="radio" name="sex" id="sex1" value="male" checked>
+									Мужской
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label for="sex2">
+									<input type="radio" name="sex" id="sex2" value="female">
+									Женский
+								</label>
+							</div>
+						</div>
+
+					</fieldset> <!-- end Пол-->
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="age">Возраст</label>
+						</div>
+						<div class="col-md-6">
+							<input type="number" min="1" name="age" id="age">
+							&nbsp;лет
+						</div>
+
+					</div> <!-- end Фамилия -->
+
+
+				</fieldset> <!-- end Коротко о себе -->
+
+
+				<fieldset class="main-fieldset">
+					<legend>Подробнее о себе</legend>
+
+					<fieldset class="form-group row">
+
+						<div class="col-md-9">
+							<div class="form-check form-check-inline">
+								<label for="gender1">
+									<input type="radio" name="gender" id="gender1" value="male" checked>
+									Парень
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label for="gender2">
+									<input type="radio" name="gender" id="gender2" value="female">
+									Девушка
+								</label>
+							</div>
+						</div>
+
+					</fieldset> <!-- end Парень/Девушка -->
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="birthday">Дата рождения</label>
+						</div>
+						<div class="col-md-6">
+							<input type="date" name="birthday" id="birthday">
+						</div>
+					</div> <!-- end Дата рождения -->
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="marital">Семейное положение</label>
+						</div>
+						<div class="col-md-6">
+							<input type="text" name="marital" id="marital">
+						</div>
+					</div> <!-- end Семейное положение -->
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="social_status">Социальный статус</label>
+						</div>
+						<div class="col-md-6">
+							<input type="text" name="social_status" id="social_status">
+						</div>
+					</div> <!-- end Социальный статус -->
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="location">Место жительства</label>
+						</div>
+						<div class="col-md-6">
+							<input type="text" name="location" id="location">
+						</div>
+					</div> <!-- end Место жительства -->
+
+
+					<fieldset>
+						<legend>Что вы обычно делаете на выходных?</legend>
+						<div class="form-check">
+							<label for="hobby1">
+								<input type="checkbox" name="hobby" id="hobby1" value="1">
+								Сплю
+							</label>
+						</div>
+						<div class="form-check">
+							<label for="hobby2">
+								<input type="checkbox" name="hobby" id="hobby2" value="2" disabled>
+								Гуляю с друзьями
+							</label>
+						</div>
+						<div class="form-check">
+							<label for="hobby3">
+								<input type="checkbox" name="hobby" id="hobby3" value="3" disabled>
+								Хожу на рыбалку
+							</label>
+						</div>
+						<div class="form-check">
+							<label for="hobby4">
+								<input type="checkbox" name="hobby" id="hobby4" value="4" disabled>
+								Играю в игры
+							</label>
+						</div>
+						<div class="form-check">
+							<label for="hobby5">
+								<input type="checkbox" name="hobby" id="hobby5" value="5">
+								Учусь
+							</label>
+						</div>
+					</fieldset> <!-- end Что вы обычно делаете на выходных? -->
+
+
+					<div class="form-group">
+						<label for="favorite_books" class="label-box">Какие книги вы любите?</label>
+						<select name="favorite_books" id="favorite_books">
+							<option value="Детективы">Детективы</option>
+							<option value="Программирование">Программирование</option>
+							<option value="Сад и Огород">Сад и Огород</option>
+						</select>
+					</div> <!-- end Какие книги вы любите? -->
+
+
+					<fieldset class="form-group row">
+
+						<legend class="col-md-12">Сколько книг вы прочитали за свою жизнь?</legend>
+
+						<div class="col-md-12">
+							<div class="form-check form-check-inline">
+								<label for="how_many_books1">
+									<input type="radio" name="sex" id="how_many_books1" value="10" checked>
+									0-10
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label for="how_many_books2">
+									<input type="radio" name="how_many_books" id="how_many_books2" value="20">
+									11-20
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label for="how_many_books3">
+									<input type="radio" name="how_many_books" id="how_many_books3" value="30">
+									21-30
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label for="how_many_books4">
+									<input type="radio" name="how_many_books" id="how_many_books4" value="40">
+									31-40
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label for="how_many_books5">
+									<input type="radio" name="how_many_books" id="how_many_books5" value="50">
+									50+
+								</label>
+							</div>
+						</div>
+
+					</fieldset> <!-- end Сколько книг вы прочитали за свою жизнь? -->
+
+					<div class="form-group">
+						<label for="you_message" class="label-box">Ваши комменраии:</label>
+						<textarea name="you_message" id="you_message" cols="30" rows="10"></textarea>
+					</div> <!-- end Какие книги вы любите? -->
+
+
+					<div class="form-group">
+						<select name="favorite_books" id="favorite_books" size="3" multiple>
+							<option value="Первая позиция">Первая позиция</option>
+							<option value="Вторая позиция">Вторая позиция</option>
+							<option value="Третья позиция">Третья позиция</option>
+							<option value="Четвертая позиция">Четвертая позиция</option>
+							<option value="Пятая позиция">Пятая позиция</option>
+						</select>
+					</div> <!-- end Какие книги вы любите? -->
+
+
+				</fieldset> <!-- end Коротко о себе -->
+
+
+				<fieldset class="main-fieldset">
+					<legend>И в заключении</legend>
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="field">Placeholder</label>
+						</div>
+						<div class="col-md-6">
+							<input type="text" name="field" id="field" placeholder="Это поле было введено до вас" value="Это поле было введено до вас">
+						</div>
+					</div> <!-- end Placeholder -->
+
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="email">Email</label>
+						</div>
+						<div class="col-md-6">
+							<input type="email" name="email" id="email">
+						</div>
+					</div> <!-- end Email -->
+
+					<fieldset>
+						<legend>
+							Хотите подписатсья на самую модную рассылку спама?
+							<i>Выберите категории</i>
+						</legend>
+						<div class="form-check">
+							<label for="spam1">
+								<input type="checkbox" name="spam" id="spam1" value="1">
+								Оборудование
+							</label>
+						</div>
+						<div class="form-check">
+							<label for="spam2">
+								<input type="checkbox" name="spam" id="spam2" value="2">
+								Как приготовать еды
+							</label>
+						</div>
+						<div class="form-check">
+							<label for="spam3">
+								<input type="checkbox" name="spam" id="spam3" value="3">
+								Заработвай миллион за два дня
+							</label>
+						</div>
+					</fieldset> <!-- end Хотите подписатсья на самую модную рассылку спама? -->
+
+					<fieldset>
+						<legend>
+							Насколько сложная задача
+						</legend>
+						<div class="form-check">
+							<label for="hard1">
+								<input type="radio" name="hard" id="hard1" value="1">
+								Совсем нет
+							</label>
+						</div>
+						<div class="form-check">
+							<label for="hard2">
+								<input type="radio" name="hard" id="hard2" value="2">
+								Так себе
+							</label>
+						</div>
+						<div class="form-check">
+							<label for="hard3">
+								<input type="radio" name="hard" id="hard3" value="3">
+								Еле справились
+							</label>
+						</div>
+					</fieldset> <!-- end Хотите подписатсья на самую модную рассылку спама? -->
+
+				</fieldset> <!-- end И в заключении -->
+
+
+
+			</form>
+
+		</section>
+
+		<section>
+			<h2>Таблицы</h2>
+
+			<div class="row">
+				<div class="col-md-12">
+					<table>
+
+						<thead>
+							<tr>
+								<th>Об'єкт обробки</th>
+								<th>Норма витрати препарату, мл/10л</th>
+								<th>Норма витрати препарату, л/сотку</th>
+								<th>Шкідливі об'єкти</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Картопля</td>
+								<td>60-80</td>
+								<td>до 5 л.</td>
+								<td>Однорічні дводольні та злакові бур'яни</td>
+							</tr>
+
+							<tr>
+								<td>Морковь</td>
+								<td>40-60</td>
+								<td>до 5 л.</td>
+								<td>Однорічні дводольні та злакові бур'яни</td>
+							</tr>
+
+						</tbody>
+
+					</table>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+
+					<table>
+
+						<thead>
+							<tr>
+								<th>Культура</th>
+								<th>Бур'яни</th>
+								<th>Норми витрати препарату, л/га</th>
+								<th>Строки обробки</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<th>Ріпак</th>
+								<td>однорічні</td>
+								<td>2 - 3</td>
+								<td>Одна обробка у фазі 2-4 листків у бур'янів. При висоті бур'янів 10-15 см</td>
+							</tr>
+
+							<tr>
+								<th>Томати</th>
+								<td rowspan="2">однорічні та багаторічні</td>
+								<td>1 - 2, 2 - 3</td>
+								<td rowspan="3">Одна обробка у фазі 1-2 листків культури, висота бур'янів 10-15 см</td>
+							</tr>
+
+							<tr>
+								<th>Огірки</th>
+								<td>2 - 3</td>
+							</tr>
+
+							<tr>
+								<th>Коноплі</th>
+								<td>однорічні</td>
+								<td>1,5</td>
+							</tr>
+
+						</tbody>
+
+					</table>
+
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+
+					<table>
+
+						<thead>
+							<tr>
+								<th width="50%">Культура</th>
+								<th width="30%">Спектр дії</th>
+								<th width="20%">Норма витрати</th>
+							</tr>
+						</thead>
+
+						<tbody>
+
+							<tr>
+								<td>Буряки (столові, цукрові, кормові), морква, соняшник, картопля, цибуля, ріпак, баклажани, гарбузи, горох, дині, огірки, перець, петрушка, селера, спаржа, томати, плодові культури (вишня, груша, персик, слива, яблуня), ягідні культури (суниця, смородина)</td>
+								<td>Гумай, куряче просо, види мишію, види пальчатки, види вівсюга, метлюг звичайний, лисохвіст польовий, просо волосовидне</td>
+								<td>0,8 - 2,0 л/га</td>
+							</tr>
+
+							<tr>
+								<td>Однорічні та деякі багаторічні дводольні в т.ч. стійкі до 2,4-Д (підмаренник чіпкий, берізка польова, зірочник середній, та ін..)</td>
+								<td>Пшениця озима</td>
+								<td>7,5 - 10</td>
+							</tr>
+
+							<tr>
+								<td>Поля, призначені для посіву озимих, овочевих, баштанних культур, цукрових буряків, кукурудзи, багаторічних трав. Пари, несільськогосподарські угіддя, та ін..</td>
+								<td>Багаторічні дводольні (осоти, ромашки, молочаї, кульбаба, та ін..)</td>
+								<td>30</td>
+							</tr>
+
+						</tbody>
+
+					</table>
+
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+
+	<!-- commit -->
+
+</body>
+</html>

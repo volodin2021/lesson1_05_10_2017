@@ -1,0 +1,101 @@
+section {
+	margin: 1rem 0;
+}
+
+/*
+Forms
+*/
+
+.form-group, fieldset {
+	margin-bottom: 20px;
+}
+
+legend {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+legend i {
+	display: block;
+	font-weight: 400;
+}
+
+label {
+	line-height: 36px;
+}
+.label-box {
+	display: block;
+	font-weight: 700;
+}
+
+
+select,
+textarea,
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+	border: 1px solid #999;
+	border-radius: .3rem;
+	min-width: 220px;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+	line-height: 36px;
+	height: 36px;
+}
+
+select[size] {
+	height: auto;
+}
+
+textarea {
+	width: 100%;
+}
+
+.main-fieldset {
+	display: block;
+	padding: 1rem;
+	border: 2px solid #ccc;
+	margin-bottom: 30px;
+}
+
+.main-fieldset >legend {
+	display: inline-block;
+	width: auto;
+	padding: .5rem;
+	font-size: 1.2rem;
+}
+
+.form-check.form-check-inline {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.form-check label {
+	line-height: 24px;
+}
+
+
+/*
+Tables
+*/
+
+table {
+	margin-bottom: 40px;
+	font-size: .9em;
+}
+
+thead {
+	font-weight: 700;
+}
+
+table td, table th {
+	padding: .5rem 1rem;
+	border-color: #ccc;
+	border-width: 1px;
+	border-style: solid;
+}
